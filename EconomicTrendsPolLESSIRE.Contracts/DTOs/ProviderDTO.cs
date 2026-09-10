@@ -1,0 +1,17 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace EconomicTrendsPolLESSIRE.Contracts.DTOs
+{
+    public class ProviderDTO
+    {
+    #nullable disable
+        [Required]
+        public int Id { get; set; }
+        [Required]
+        public string Code { get; set; }
+        [Required]
+        public string Name { get; set; }
+        [Required]
+        public DateTime CreatedAtUtc { get; set; }
+    }
+}
