@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using EconomicTrendsPolLESSIRE.Contracts.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace EconomicTrendsPolLESSIRE.Contracts.DTOs
 {
@@ -10,12 +11,15 @@ namespace EconomicTrendsPolLESSIRE.Contracts.DTOs
         [Required]
         public string Email { get; set; }
         [Required]
-        public string PasswordHachV2 { get; set; }
+        public string PasswordHashV2 { get; set; }
         [Required]
         public Guid SecurityStamp { get; set; }
         [Required]
-        public int Role { get; set; }
+        public UserRole Role { get; set; }
+
         [Required]
-        public int Status { get; set; }
+        public UserStatus Status { get; set; }
+
+        public bool Active { get; set; }
     }
 }

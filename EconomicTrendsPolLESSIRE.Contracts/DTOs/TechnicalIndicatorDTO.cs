@@ -5,7 +5,7 @@ namespace EconomicTrendsPolLESSIRE.Contracts.DTOs
     public class TechnicalIndicatorDTO
     {
         [Required]
-        public int InstrumentId { get; set; }
+        public long InstrumentId { get; set; }
         [Required]
         public int IntervalCode { get; set; }
         [Required]
@@ -19,6 +19,6 @@ namespace EconomicTrendsPolLESSIRE.Contracts.DTOs
         [Required]
         public decimal Value3 { get; set; }
         [Required]
-        public byte ParameterHash { get; set; }
+        public byte[]? ParameterHash { get; set; }
     }
 }

@@ -5,9 +5,9 @@ namespace EconomicTrendsPolLESSIRE.Contracts.DTOs
     public class MarketQuoteDTO
     {
         [Required]
-        public int Id { get; set; }
+        public long Id { get; set; }
         [Required]
-        public int InstrumentId { get; set; }
+        public long InstrumentId { get; set; }
         [Required]
         public int ProviderId { get; set; }
         [Required]

@@ -5,7 +5,7 @@ namespace EconomicTrendsPolLESSIRE.Contracts.DTOs
     public class MarketSnapshotDTO
     {
         [Required]
-        public int InstrumentId { get; set; }
+        public long InstrumentId { get; set; }
         [Required]
         public decimal LastPrice { get; set; } = 0;
         [Required]

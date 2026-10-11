@@ -5,7 +5,7 @@ namespace EconomicTrendsPolLESSIRE.Contracts.DTOs
     public class MarketCandleDTO
     {
         [Required]
-        public int InstrumentId { get; set; }
+        public long InstrumentId { get; set; }
         [Required]
         public int IntervalCode { get; set; }
         [Required]

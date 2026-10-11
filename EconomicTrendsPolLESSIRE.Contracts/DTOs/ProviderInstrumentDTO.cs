@@ -8,7 +8,7 @@ namespace EconomicTrendsPolLESSIRE.Contracts.DTOs
         [Required]
         public int ProviderId { get; set; }
         [Required]
-        public int InstrumentId { get; set; }
+        public long InstrumentId { get; set; }
         [Required]
         public string ProviderSymbol { get; set; }
         [Required]
